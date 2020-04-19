@@ -1,13 +1,13 @@
 import random
 
 levels = print('''
-A. Easy
-B. Medium
-C. Hard
+A - Easy
+B - Medium
+C - Hard
 ''')
 player_level = input('Choose level: ').upper()
 
-
+# function for easy level
 def easy():
     computer_number = random.randint(1, 10)
     try:
@@ -35,6 +35,7 @@ def easy():
         print('That is not a number')
 
 
+# function for medium level
 def medium():
     computer_number = random.randint(1, 20)
     try:
@@ -62,6 +63,7 @@ def medium():
         print('That is not a number')
 
 
+# function for hard level
 def hard():
     computer_number = random.randint(1, 50)
     try:
